@@ -18,6 +18,7 @@
     name: "{{ item }}"
     state: restarted
     pattern: "{{ item }}"
+    sleep: 2
   with_items: cinder_service_names
   failed_when: false
 
